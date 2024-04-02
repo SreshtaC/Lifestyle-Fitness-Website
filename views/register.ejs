@@ -1,0 +1,45 @@
+<!-- <h1> Sign up form </h1>
+ 
+<form action="/register" method="POST">
+    <input type="text" name="username"
+        placeholder="username">
+    <input type="password" name="password"
+        placeholder="password">
+    <button>Submit</button>
+</form>
+ 
+<h1>This is home page</h1>
+ 
+<li><a href="/register">Sign up!!</a></li>
+<li><a href="/login">Login</a></li>
+<li><a href="/logout">Logout</a></li> -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Limitless Lifestyle Sign-Up</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="js1.js"> </script>
+      </head>
+    <body onload="document.form1.text1.focus()">
+      <div class="split" style="right:0; background-color:rgb(255, 255, 255)">
+        <img src="https://static.vecteezy.com/system/resources/previews/003/126/261/original/healthy-lifestyle-infographic-fitness-healthy-food-and-active-life-vector.jpg" alt="healthy lifestyle" class="centered" style="width:95%">
+      </div>
+      <div class="split" style="left:0; background-color:rgb(247, 204, 255)">
+        <div class="centered">
+        <h2>Welcome!</h2>
+        <h3>Kindly Sign-Up & create your account: </h3>
+        <div class="center">
+          <form id="myForm" name="myForm" onsubmit="return validateForm()" method="post" action="/register" >
+            Full Name:   <input class="input1" type="text" name="name" required><br>
+            Email - id:   <input class="input1" type="text" name="email" required><br>
+            Mobile No:    <input class="input1" type="text" id="my-input" name="phone" minlength="10" required><br>
+            New Username: <input class="input1" style="width:63%" type="text" name="user" required><br>
+            New Password: <input class="input1" style="width:63%" type="password" id="pass" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+            Confirm Password: <input class="input1" style="width:57%" type="password" id="cpass" name="cpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+            <input type="submit" class="button button1" value="Submit">
+          </form> 
+        </div>
+      </div> <br>
+      </body>
+</html>

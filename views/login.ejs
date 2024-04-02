@@ -1,0 +1,53 @@
+<!-- 
+<h1>login</h1>
+
+<form action="/login" method="POST">
+	<input type="text" name="username"
+		placeholder="username">
+	<input type="password" name="password"
+		placeholder="password">
+	<button>login</button>
+</form>
+
+<h1>This is home page</h1>
+
+<li><a href="/register">Sign up!!</a></li>
+<li><a href="/login">Login</a></li>
+<li><a href="/logout">Logout</a></li> -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Limitless Lifestyle Login</title>
+        <link rel="stylesheet" href="style.css" />
+      </head>
+    <body> 
+      <div class="split left">
+        <img src="https://blog.orthoindy.com/wp-content/uploads/2020/08/orthoindy-a-healthy-environment-could-lead-to-a-healthy-lifestyle.jpg" alt="healthy lifestyle" class="centered" style="width:95%">
+      </div>
+      <div class="split right">
+        <div class="centered">
+          <div id="message">
+        <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const signupSuccess = urlParams.get('signupSuccess');
+        if (signupSuccess === 'true') {
+            const messageElement = document.getElementById('message');
+            messageElement.textContent = 'Signup successful. You can now login...';
+        }
+        </script>
+      </div>
+      <br>
+        <h2 style="font-family:fantasy;"><b>Welcome to Limitless Lifestyle!</b></h2> 
+        <h3 style="font-family:inherit">Kindly Login to your Account below: </h3>
+        <form name="LoginForm" action= "/login" method="post">
+          Username: <input class="input1" type="text" id="user" name="user" required><br>
+          Password: <input class="input1" type="password" id="pass" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+          <br><br>
+          <input type="submit" class="button" value="Submit">
+        </form> 
+        <br>
+        <h4 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Don't have an account? <span><a href="/register"><button>Sign-up Here!</button></a></span></h4>
+        </div>
+      </body>
+</html>

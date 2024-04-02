@@ -1,0 +1,108 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Limitless Lifestyle</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .button-container {
+        text-align: center;
+    }
+    .button-container a.button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: #3498db;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    .button-container a.button:hover {
+        background-color: #2980b9;
+    }
+</style>
+</head>
+<body>
+  <h1>Limitless Lifestyle -- </h1> 
+    <div class="button-container">
+        <a href="/register" class="button">Sign Up!</a>
+        <a href="/login" class="button">Login</a>
+    </div>
+</body>
+</html>
+<!-- <li><a href="/register">Sign up!!</a></li>
+<li><a href="/login">Login</a></li> -->
+<!-- <li><a href="/logout">Logout</a></li> -->
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Nutrition - Limitless Lifestyle</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="myApp.js"></script>
+  </head>
+<body>
+  <div class="topnav">
+    <a href="lab1.html">Home</a>
+    <a href="fitness.html">Fitness</a>
+    <a class="active" href="nutrition.html">Nutrition</a>
+    <a href="mental_health.html">Mental & Social Health</a>
+    <a href="contact.html">Contact</a>
+    <div class="login">
+      <a href="login_page.html"><button class="login">Logout</button></a>
+      </div>
+  </div>
+  <img class="pic1" src="bmi.jpg" alt="Body Mass Index"> 
+  <h2>Kindly Enter your Details</h2>
+<div ng-app="myApp" ng-controller="myCtrl">
+<div class="div1">
+  <form>
+  <label for="fname">Name:</label><br>
+  <input class="bmi_input" type="text" ng-model="firstname" id="fname" name="fname"><br>
+  <label for="weight">Weight in Kgs:</label><br>
+  <input class="bmi_input" type="text" ng-model="w" id="weight" name="weight"><br>
+  <label for="height">Height in meters:</label><br>
+  <input class="bmi_input" type="text" ng-model="h" id="height" name="height"><br><br>
+</form> 
+  <br>
+  <button class="button" onclick=show()>SUBMIT</button>
+  <br> <br>
+</div>
+<h1>{{firstname}},</h1>
+
+<div style="background-color: white;">
+  <h2 style="text-indent: 40px;" id="bmi_">Your Body Mass Index value is: <span id="bmi_display"></span></h2>
+</div>
+<div ng-controller="itemsCtrl">
+  <br><hr><br>
+  <p>Filter and find out recommended food quantities:</p>
+  <p><input type="text" ng-model="test"></p>
+  <ul>
+    <li ng-repeat="x in names | filter:test">
+      {{ x }}
+    </li>
+  </ul>
+</div>
+</div>
+
+<script>
+  function show(){
+    var wt = document.getElementById("weight").value;
+    var h = document.getElementById("height").value;
+    var h_sq = parseFloat(h)*parseFloat(h);
+    var bmi = parseFloat(wt)/h_sq;
+    document.getElementById("bmi_display").innerHTML=bmi;
+  }
+</script>
+</body>
+</html> -->

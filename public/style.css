@@ -1,0 +1,148 @@
+.button {
+    background-color: #08659b; 
+    border: none; color: white;
+    padding: 15px 32px;
+    margin-right: 20px;
+    text-align: center;
+    display: inline;
+    font-size: 16px;
+  }
+  .button1 {background-color: #b02b74;}
+  .button2 {background-color: #14833f;} 
+  .button3 {background-color: #d11003;} 
+  * {
+  box-sizing: border-box;
+  }
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(222, 255, 255);
+    padding-top: 7px;
+    position: sticky;
+    top:0;
+  }
+  .topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .topnav a.active {
+    background-color: #b02b74;
+    color: white;
+  }
+  .topnav .login{
+    float:right;
+  }
+  .topnav .login button {
+    float: right;
+    background-color: rgb(222, 255, 255);
+    color: black;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  .home_font {
+    font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+  }
+  header {
+  background-color: #edb2d0;
+  padding: 5px;
+  text-align: center;
+  font-size: 24px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #b02b74;
+  }
+  section::after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  #aboutf{
+    padding: 20px;
+  }
+  #aboutf img{
+    width: 600px;
+    padding: 10px 10px;
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+  #aboutf p{
+   font-size: 20px;
+   display: table-cell;
+   color: #212529;
+  }
+  .container {
+    display: flex;
+    align-items: start;
+  }
+  .pic1 {
+  display: inline;
+  float:right;
+  width: 50%;
+  height: 100%;
+  }
+  .div1 {
+  width:auto;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: aliceblue;
+  justify-content: space-evenly;
+  }
+  .div2 {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width:24%;
+    height: 50%;
+    border-radius: 5px;
+    background-color: aliceblue;
+    }
+  .input1 {
+  width: 70%;
+  padding: 12px 10px;
+  margin: 8px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  }
+  .split {
+    height: 100%;
+    width: 50%;
+    position: fixed; top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  .left {
+    left: 0; background-color: white;
+  }
+  .right {
+    right: 0; background-color: #D4F1F4;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .bmi_input {
+    width: 48%;
+    padding: 12px 10px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
